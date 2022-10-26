@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 module</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="login-area">
+        <h1 class="text-center h1padding" >welcome to pioner Bank</h1>
+        <div class="submit">
+            <h4>Login</h4>
+            <input type="text" class="form-control" placeholder="Enter your email here">
+            <br>
+            <input type="password" name="" id="" class="form-control" placeholder="Enter your password">
+            <br>
+            
+            <button class="btn btn-primary" id="click">Enter</button>
+        </div>
+    </div>
+
+    <div id="transaction-area"> 
+<!-- .row>.col-md-4*3>h2+h5 -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="deposit status">  
+            <h5>Deposit</h5>
+            <h2>$ <samp id="depositnum">00</samp></h2>
+        </div></div>
+        
+        <div class="col-md-4">
+            <div class="withdraw status">
+            <h5>Withdraw</h5>
+            <h2>$ <span id="withdrawnum"">00</span></h2>
+        </div></div>
+
+        <div class="col-md-4">
+            <div class="balance status">
+            <h5>Balance</h5>
+            <h2>$ <span id="balancenum">1200</span></h2>
+        </div></div>
+    </div>
+
+<!--   .row>col-md-6*2>h5+input+button -->
+<div class="row">
+    <div class="col-md-6">
+        <div class="submit-area">
+            <h5>Deposit</h5>
+        <input type="text"class="form-control" id="depo" placeholder="$ amount you want to deposit">
+        <br>
+        <button class="btn btn-primary" id="clickme" >Deposit</button>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="submit-area">
+        <h5>withdraw</h5>
+        <input type="text"class="form-control" id="withdrawinput" placeholder="$ amount you want to withdraw">
+        <br>
+        <button class="btn btn-primary" id="withdrawbtn">withdraw</button>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
